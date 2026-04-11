@@ -47,7 +47,7 @@ import models
 app = Flask(__name__)
 
 # Correct CORS – allow your Vercel frontend
-CORS(app, origins=["https://fir-management-system.vercel.app"])
+CORS(app, origins=["https://fir-management-system-llx81079l-zohhakashifs-projects.vercel.app/"])
 
 # ------------------- STATIC FILE SERVING (for photos & evidence) -------------------
 @app.route('/static/<path:filename>')
