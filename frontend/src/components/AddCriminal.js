@@ -12,7 +12,7 @@ function AddCriminal() {
       return;
     }
 
-    const res = await fetch("https://fir-management-system.onrender.com/add_fir_criminal", {
+    const res = await fetch("https://fir-management-system-0x79.onrender.com/add_fir_criminal", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
