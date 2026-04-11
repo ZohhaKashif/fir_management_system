@@ -58,7 +58,7 @@ function FIRDetails() {
     if (!filePath) return <p>No file</p>;
     
     const extension = filePath.split('.').pop().toLowerCase();
-    const fullUrl = `https://fir-management-system.onrender.com${filePath}`;
+    const fullUrl = `https://fir-management-system-0x79.onrender.com${filePath}`;
     
     if (extension === 'mp4' || extension === 'webm' || extension === 'ogg') {
       return (
@@ -192,7 +192,7 @@ function FIRDetails() {
                     <div key={c.criminal_id} className="border p-3 rounded flex items-center space-x-3">
                       {c.photo_url && (
                         <img
-                          src={`https://fir-management-system.onrender.com${c.photo_url}`}
+                          src={`https://fir-management-system-0x79.onrender.com${c.photo_url}`}
                           alt={c.full_name}
                           className="w-12 h-12 object-cover rounded-full"
                         />
