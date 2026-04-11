@@ -37,7 +37,7 @@ function UpdateCriminal() {
           cnic: criminalData.cnic || '',
         });
         if (criminalData.photo_url) {
-          setPhotoPreview(`https://fir-management-system.onrender.com${criminalData.photo_url}`);
+          setPhotoPreview(`https://fir-management-system-0x79.onrender.com${criminalData.photo_url}`);
         }
         
         const relationsData = await api.get(`/api/criminal/${id}/full-relations`);
@@ -106,7 +106,7 @@ function UpdateCriminal() {
     formData.append('relations', JSON.stringify(relationsArray));
 
     try {
-      const response = await fetch(`https://fir-management-system.onrender.com/api/criminal/${id}`, {
+      const response = await fetch(`https://fir-management-system-0x79.onrender.com/api/criminal/${id}`, {
         method: 'PUT',
         headers: { 'Authorization': `Bearer ${token}` },
         body: formData,
