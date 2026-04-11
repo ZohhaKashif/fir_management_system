@@ -57,7 +57,7 @@ function CreateCriminal() {
     formData.append('relations', JSON.stringify(relationsArray));
 
     try {
-      const response = await fetch('https://fir-management-system.onrender.com/api/criminal', {
+      const response = await fetch(https://fir-management-system-0x79.onrender.com/api/criminal', {
         method: 'POST',
         headers: { 'Authorization': `Bearer ${token}` },
         body: formData,
