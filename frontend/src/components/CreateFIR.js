@@ -108,7 +108,7 @@ function CreateFIR() {
     });
 
     try {
-      const response = await fetch('https://fir-management-system.onrender.com/api/fir', {
+      const response = await fetch('https://fir-management-system-0x79.onrender.com/api/fir', {
         method: 'POST',
         headers: { 'Authorization': `Bearer ${token}` },
         body: formData,
